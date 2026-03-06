@@ -24,50 +24,89 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
-/* Navbar Styles */
+/* Navbar Container */
 .navbar {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between; /* Pushes Logo to left, Links to right */
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #0f172a; /* Professional Dark Navy */
     position: sticky;
     top: 0;
-    z-index: 100;
-    box-shadow: var(--shadow);
+    z-index: 1000;
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Logo Styling */
+.navbar h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--white);
-}
-
-.nav-menu {
+/* Horizontal Link Menu */
+.nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 30px; /* Space between menu items */
 }
 
-.nav-link {
-    color: var(--white);
+.nav-links li a {
     text-decoration: none;
+    color: #cbd5e1; /* Subtle grey-white */
     font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: var(--transition);
+    font-size: 1rem;
+    transition: 0.3s;
 }
 
-.nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
+/* Classic Hover Effect */
+.nav-links li a:hover {
+    color: #38bdf8; /* Modern blue highlight */
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px; /* Adjust based on navbar height */
+    left: -100%; /* Hide off-screen */
+    flex-direction: column;
+    background-color: #0f172a;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 20px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  /* When JS adds the 'active' class, slide the menu in */
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+}
+
+/* Hide hamburger on desktop */
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 /* Container */
@@ -85,45 +124,60 @@ html {
 }
 
 /* Home Section */
-.home-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+/* --- Classic Hero Section --- */
+/* --- Classic Hero Section with Tech Background --- */
+.hero {
+    height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    color: var(--white);
+    align-items: center;
     text-align: center;
+    
+    /* The first part is a 75% dark tint; the second part is your image */
+    background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), 
+                url('tech-bg.jpg.jpg'); 
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This creates a smooth parallax scroll effect */
+    color: white;
 }
 
-.home-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+    /* Subtle glow to match the code in the background */
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.4); 
 }
 
-.home-content p {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    opacity: 0.9;
+.hero p {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    max-width: 700px;
+    margin-bottom: 30px;
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: var(--white);
-    color: var(--primary-color);
-    padding: 1rem 2.5rem;
-    font-size: 1.1rem;
+/* Styled "View My Work" Button */
+.btn-primary {
+    padding: 12px 35px;
+    background-color: transparent;
+    color: #38bdf8;
+    border: 2px solid #38bdf8;
+    border-radius: 5px;
     font-weight: 600;
-    border: none;
-    border-radius: 50px;
+    text-transform: uppercase;
     text-decoration: none;
-    cursor: pointer;
-    transition: var(--transition);
-    margin-top: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
-.cta-button:hover {
+.btn-primary:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* About Section */
