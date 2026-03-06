@@ -5,10 +5,10 @@
 }
 
 :root {
-    --primary-color: #141575;
-    --secondary-color: #6b700f;
-    --text-color: #090a0a;
-    --light-bg: #f7fafc;
+    --primary-color: #052554;
+    --secondary-color: #1a69b3;
+    --text-color: #052121;
+    --light-bg: #c3c4c5;
     --white: #ebeef2;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
@@ -347,6 +347,11 @@ html {
 /* Projects Section */
 .projects-section {
     background-color: var(--white);
+}
+
+.project-link{
+    display: block;
+    text-align: center;
 }
 
 .projects-grid {
