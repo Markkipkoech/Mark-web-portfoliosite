@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Services — Mark Kipkoech, Web Developer" />
+  <title>Services | Mark Kipkoech</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">mk<span>.</span></a>
+    <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-links" id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="btn-contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="section-label">What I offer</div>
+      <h1>Services</h1>
+      <p>Professional services tailored to help you build and ship on the web.</p>
+    </div>
+  </div>
+
+  <section class="section services-section">
+    <div class="container">
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Web Development</h3>
+          <p class="service-description">
+            Responsive, cross-browser websites — from simple static pages to multi-page dynamic sites. I focus on clean code, fast loading, and good structure.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Responsive Design</li>
+            <li><i class="fas fa-check"></i> HTML5 &amp; CSS3</li>
+            <li><i class="fas fa-check"></i> Performance Optimization</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-database"></i></div>
+          <h3>Database Management</h3>
+          <p class="service-description">
+            Designing and managing databases for web applications — structured schemas, clean relationships, and reliable queries that scale with your needs.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Database Design</li>
+            <li><i class="fas fa-check"></i> SQL (SQLite, PostgreSQL)</li>
+            <li><i class="fas fa-check"></i> ORM via SQLAlchemy</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-cogs"></i></div>
+          <h3>Backend &amp; APIs</h3>
+          <p class="service-description">
+            Building Flask-powered backends with authentication, database integration, and third-party API connections — including M-Pesa payment flows for Kenyan businesses.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> RESTful APIs</li>
+            <li><i class="fas fa-check"></i> Flask &amp; Python</li>
+            <li><i class="fas fa-check"></i> M-Pesa Integration</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-lock"></i></div>
+          <h3>Authentication Systems</h3>
+          <p class="service-description">
+            Secure user login, registration, and session management. I implement role-based access, password resets via email, and protected routes.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> User Login &amp; Registration</li>
+            <li><i class="fas fa-check"></i> Password Reset via Email</li>
+            <li><i class="fas fa-check"></i> Admin &amp; User Roles</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+          <h3>E-Commerce Solutions</h3>
+          <p class="service-description">
+            Full-stack online stores with product listings, cart systems, order tracking, and payment integration — tailored for local Kenyan businesses.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Product &amp; Cart System</li>
+            <li><i class="fas fa-check"></i> M-Pesa STK Push</li>
+            <li><i class="fas fa-check"></i> Order Management</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-tools"></i></div>
+          <h3>Site Maintenance</h3>
+          <p class="service-description">
+            Ongoing support for existing websites — bug fixes, feature additions, performance improvements, and keeping your site running smoothly.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Bug Fixes</li>
+            <li><i class="fas fa-check"></i> Feature Updates</li>
+            <li><i class="fas fa-check"></i> Performance Review</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="services-cta">
+        <p>Not sure what you need? Just reach out and we can figure it out together.</p>
+        <a href="contact.html" class="btn-primary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav-hint container">
+    <a href="projects.html" class="btn-secondary">Next: Projects →</a>
+  </div>
+
+  <footer class="footer">
+    <p>Designed &amp; built by <strong>Mark Kipkoech</strong> — Nakuru, Kenya &copy; 2026</p>
+    <p class="footer-sub">Open to freelance and collaboration opportunities.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

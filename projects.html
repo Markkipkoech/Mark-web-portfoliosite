@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects — Mark Kipkoech, Web Developer" />
+  <title>Projects | Mark Kipkoech</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">mk<span>.</span></a>
+    <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-links" id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html" class="btn-contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="section-label">What I've built</div>
+      <h1>Projects</h1>
+      <p>A selection of things I've worked on — real problems, real code.</p>
+    </div>
+  </div>
+
+  <section class="section projects-section">
+    <div class="container">
+      <div class="projects-grid">
+
+        <div class="project-card project-card--featured">
+          <div class="project-meta">Flask · SQLAlchemy · M-Pesa Daraja API · Flask-Login · Flask-Mail</div>
+          <div class="project-badge">Featured</div>
+          <h3>Bora Poultry</h3>
+          <p>
+            A full-stack e-commerce platform for a Kenyan free-range Kienyeji chicken business based in Nakuru.
+            Customers can browse products, add to cart, and pay via M-Pesa STK Push. The backend handles user
+            authentication, order management, email notifications, and an admin dashboard for the business owner.
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>SQLite</span>
+            <span>M-Pesa API</span>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status">In Progress</span>
+            <a href="https://github.com/Markkipkoech" class="project-link" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--placeholder">
+          <div class="project-meta">Coming soon</div>
+          <h3>Next Project</h3>
+          <p>Something new is in the works. Follow me on GitHub to stay updated on what I'm building next.</p>
+          <div class="project-footer">
+            <a href="https://github.com/Markkipkoech" class="project-link" target="_blank">Follow on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--placeholder">
+          <div class="project-meta">Coming soon</div>
+          <h3>More on the way</h3>
+          <p>I'm continuously learning and building. Check back soon.</p>
+          <div class="project-footer">
+            <a href="contact.html" class="project-link">Have a project idea? Let's talk →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav-hint container">
+    <a href="contact.html" class="btn-secondary">Next: Contact →</a>
+  </div>
+
+  <footer class="footer">
+    <p>Designed &amp; built by <strong>Mark Kipkoech</strong> — Nakuru, Kenya &copy; 2026</p>
+    <p class="footer-sub">Open to freelance and collaboration opportunities.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

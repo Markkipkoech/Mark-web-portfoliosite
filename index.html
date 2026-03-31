@@ -1,253 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mark Kipkoech — Web Developer based in Nakuru, Kenya. Building clean, fast, and functional web experiences." />
+  <title>Mark Kipkoech | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
 </head>
-<body>
-    <!-- Navigation Bar --> 
-        <nav class="navbar">
-            <div class="logo">MyPortfolio</div>
-  
-            <div class="menu-toggle" id="mobile-menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
+<body class="home-page">
 
-            <ul class="nav-links" id="nav-list">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact" class="btn-contact">Contact</a></li>
-            </ul>
-        </nav>  
-
-    <!-- Home Section -->
-    <section class="hero" id="home">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Creating amazing digital experiences with clean code and classic design.</p>
-      <a href="#projects" class="btn-primary">View My Work</a>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>
-                   I am a passionate web developer who enjoys creating simple, responsive, and user-friendly websites. I like learning how websites work and turning ideas into real projects using web technologies.
-                </p>
-                <p>
-                    My journey in web development started with curiosity and a strong interest in technology. Over time, I have been learning front-end development and improving my skills by practicing and building small projects.
-                </p>
-                <p>
-                    I am also learning backend development using Python. I work on creating RESTful APIs, managing databases, and writing backend logic. I am continuously learning more about database design, API development, and improving server-side performance.
-                </p>
-                <p>
-                   When I’m not coding, I enjoy learning new technologies, reading tech blogs, and exploring open-source projects to improve my skills.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>HTML</h3>
-                    <p>Expert in semantic HTML5 markup and structure</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3>CSS</h3>
-                    <p>Proficient in responsive design and animations</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3>Python</h3>
-                    <p>Comfortable with core Python concepts, scripting, and building small projects, backend development, and problem-solving.</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                </div>
-                <div class="skill-card">
-                    <h3>Git & GitHub</h3>
-                    <p>Version control and collaborative development</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 88%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3>Web Performance</h3>
-                    <p>Optimization and best practices</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 82%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Services Section -->
-    <section id="services" class="section services-section">
-    <div class="container">
-        <h2>Services I Offer</h2>
-        <p class="section-subtitle">Professional services tailored to your needs</p>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-                <h3>Web Development</h3>
-                <p class="service-description">
-                    Building responsive, modern, and high-performance websites using the latest technologies. 
-                    From simple static sites to complex web applications, I create solutions that work perfectly 
-                    across all devices and browsers.
-                </p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> Responsive Design</li>
-                    <li><i class="fas fa-check"></i> HTML5 & CSS3</li>
-                    <li><i class="fas fa-check"></i> Web Optimization</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h3>Database Management</h3>
-                <p class="service-description">
-                    Expert handling of databases and data management systems. I design, implement, and maintain 
-                    robust database solutions that ensure your data is secure, organized, and easily accessible 
-                    for your applications.
-                </p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> Database Design</li>
-                    <li><i class="fas fa-check"></i> SQL & NoSQL</li>
-                    <li><i class="fas fa-check"></i> Performance Optimization</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
-                <h3>Backend Development & APIs</h3>
-                <p class="service-description">
-                    Creating powerful backend systems and APIs that power your applications. I develop scalable, 
-                    secure server-side solutions with proper authentication, authorization, and efficient data 
-                    processing capabilities.
-                </p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> RESTful APIs</li>
-                    <li><i class="fas fa-check"></i> Server Development</li>
-                </ul>
-            </div>
-        </div>
+  <nav class="navbar">
+    <a href="index.html" class="logo">mk<span>.</span></a>
+    <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
-    </section>
+    <ul class="nav-links" id="nav-list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="btn-contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects-section">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project Coming Soon</h3>
-                    <a href="#" class="project-link">View Project</a>
-                </div>
-            </div>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-layout">
+
+      <div class="hero-inner">
+        <span class="hero-tag">Available for freelance work</span>
+        <h1>Hi, I'm <em>Mark Kipkoech</em></h1>
+        <p>I build clean, responsive websites and backend systems — turning ideas into things that actually work on the internet.</p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn-primary">See My Work</a>
+          <a href="contact.html" class="btn-secondary">Let's Talk</a>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-intro">I'd love to hear from you! Feel free to reach out for collaborations or just a friendly hello.</p>
-                
-                <form class="contact-form" action="mailto:kipkoechhmark41@hmail.com" method="POST" enctype="text/plain">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="6" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
-
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p><strong>Email:</strong> <a href="mailto:Kipkoechmark41@gmail.com">Kipkoechmark41@gmail.com</a></p>
-                    <p><strong>Phone:</strong> <a href="tel:+254768102506">+254768102506</a></p>
-                    <p><strong>Location:</strong> <em>Nakuru city, Kenya</em></p>
-                    
-                <div class="whatsapp-contact">
-                <h3>Chat on WhatsApp</h3>
-                <p>Need a quick response? Connect with me on WhatsApp</p>
-                <a href="https://wa.me/254768102506" class="whatsapp-button" target="_blank">
-                <i class="fab fa-whatsapp"></i> Message on WhatsApp
-                </a>
-
-                <div class="social-links">
-                    <h3>Follow Me</h3>
-                    <a href="https://www.linkedin.com/in/mark-kipkoech-b4b0233ab" class="social-link" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://github.com/Markkipkoech" class="social-link" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="https://x.com/MKipkoech73761" class="social-link" target="_blank">
-                    <i class="fab fa-twitter"></i> X
-                    </a>
-                    <a href="https://www.instagram.com/marky_novaa?igsh=ZzFqZmFwM2xneGFp" class="social-link" target="_blank">
-                    <i class="fab fa-instagram"></i> Instagram
-                    </a>
-                    </div>
-                  </div>
-                </div>
-            </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <img src="profile.jpg" alt="Mark Kipkoech — Web Developer" class="hero-photo" />
         </div>
-    </section>
+        <div class="photo-accent-dot"></div>
+        <div class="photo-accent-ring"></div>
+      </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 My Portfolio.
-             <em>Mark Kipkoech</em>.
-             All rights reserved.
-        </p>
-    </footer>
-    <script>
-      const menu =
-    document.querySelector('#mobile-menu');
-      const menuLinks =
-    document.querySelector('#nav-list');
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-     menu.addEventListener('click', function() {
-       menu.classList.toggle('is-active'); // For animating the bars if you want
-       menuLinks.classList.toggle('active'); // Shows/hides the menu
-      });
-    </script>
+  <!-- About -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <h2>A bit about me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a self-driven web developer based in Nakuru, Kenya. I got into coding out of genuine curiosity — I wanted to understand how websites worked, and one thing led to another.
+          </p>
+          <p>
+            On the frontend I work with HTML, CSS, and JavaScript to build interfaces that feel natural and load fast. On the backend I use Python — mostly Flask — to build APIs, handle databases, and wire everything together.
+          </p>
+          <p>
+            I've built a full-stack e-commerce project (Bora Poultry) which includes M-Pesa payment integration, user authentication, and an admin dashboard. It's one of the things I'm most proud of so far.
+          </p>
+          <p>
+            When I'm not building something, I'm usually reading about tech, exploring open-source repos, or experimenting with something new.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years Learning</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">Full</span>
+            <span class="stat-label">Stack Capable</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-cta">
+        <a href="skills.html" class="btn-secondary">View My Skills →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Designed &amp; built by <strong>Mark Kipkoech</strong> — Nakuru, Kenya &copy; 2026</p>
+    <p class="footer-sub">Open to freelance and collaboration opportunities.</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
