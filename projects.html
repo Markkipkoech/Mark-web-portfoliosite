@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Projects — Mark Kipkoech, Web Developer" />
+  <meta name="description" content="Projects by Mark Kipkoech, a Software Developer with a Backend Engineering Focus, featuring practical software development and learning projects." />
   <title>Projects | Mark Kipkoech</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -11,22 +11,23 @@
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <a href="index.html" class="logo">mk<span>.</span></a>
-    <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
+    <button type="button" class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" aria-controls="nav-list" aria-expanded="false">
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+    </button>
     <ul class="nav-links" id="nav-list">
       <li><a href="index.html">Home</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+      <li><a href="engineering.html">Engineering</a></li>
+      <li><a href="learning-journal.html">Learning Journal</a></li>
       <li><a href="contact.html" class="btn-contact">Contact</a></li>
     </ul>
   </nav>
 
+  <main>
   <div class="page-header">
     <div class="container">
       <div class="section-label">What I've built</div>
@@ -39,45 +40,54 @@
     <div class="container">
       <div class="projects-grid">
 
-        <div class="project-card project-card--featured">
-          <div class="project-meta">Flask · SQLAlchemy · M-Pesa Daraja API · Flask-Login · Flask-Mail</div>
-          <div class="project-badge">Featured</div>
-          <h3>Bora Poultry</h3>
+        <article class="project-card project-card--featured">
+          <div class="project-meta">Backend-focused business management platform</div>
+          <h3>CompanyHub</h3>
           <p>
-            A full-stack e-commerce platform for a Kenyan free-range Kienyeji chicken business based in Nakuru.
-            Customers can browse products, add to cart, and pay via M-Pesa STK Push. The backend handles user
-            authentication, order management, email notifications, and an admin dashboard for the business owner.
+            CompanyHub is a business management platform I am developing to address practical operational needs of Kenyan small and medium-sized businesses.
+            The project focuses on building reliable backend systems for business operations, with attention to data integrity, authorization, maintainability and dependable business workflows.
+          </p>
+          <p>
+            <strong>Engineering work:</strong> Modular backend application structure; business logic organized around domain services; API development and resource access controls; database integrity and financial calculation rules; concurrency-aware sales operations; automated testing across application and database behavior.
           </p>
           <div class="project-tech">
             <span>Python</span>
-            <span>Flask</span>
+            <span>Django</span>
+            <span>Django REST Framework</span>
             <span>SQLite</span>
-            <span>M-Pesa API</span>
-            <span>HTML/CSS</span>
+            <span>PostgreSQL</span>
           </div>
+          <p><strong>My role:</strong> Founder and developer, responsible for product direction, engineering decisions and implementation.</p>
           <div class="project-footer">
-            <span class="project-status">In Progress</span>
-            <a href="https://github.com/Markkipkoech" class="project-link" target="_blank">View on GitHub →</a>
+            <span class="project-status">In development</span>
+            <a href="https://github.com/Markkipkoech/CompanyHub" class="project-link" target="_blank" rel="noopener noreferrer">Project repository →</a>
           </div>
-        </div>
+        </article>
 
-        <div class="project-card project-card--placeholder">
-          <div class="project-meta">Coming soon</div>
-          <h3>Next Project</h3>
-          <p>Something new is in the works. Follow me on GitHub to stay updated on what I'm building next.</p>
-          <div class="project-footer">
-            <a href="https://github.com/Markkipkoech" class="project-link" target="_blank">Follow on GitHub →</a>
+        <article class="project-card">
+          <div class="project-meta">A structured path toward professional backend engineering</div>
+          <h3>Backend Engineering Learning Journey</h3>
+          <p>
+            This is my practical learning project documenting my development toward becoming an independent backend software engineer.
+            It combines structured study, programming exercises, technical research and practical experimentation to develop the knowledge required to design, build, test and maintain reliable backend systems.
+          </p>
+          <p>
+            <strong>Learning areas:</strong> Python and programming fundamentals; relational databases, SQL and PostgreSQL; Django and Django REST Framework; backend architecture and software design; authentication, authorization and security; transactions, concurrency and data integrity; testing, debugging and software quality; DevOps, infrastructure and application reliability.
+          </p>
+          <p>
+            <strong>Engineering artifact:</strong> I have developed a Python learning-record utility that validates learning entries, generates dated Markdown records and updates a progress tracker while protecting existing records.
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Markdown</span>
+            <span>Git</span>
+            <span>GitHub</span>
           </div>
-        </div>
-
-        <div class="project-card project-card--placeholder">
-          <div class="project-meta">Coming soon</div>
-          <h3>More on the way</h3>
-          <p>I'm continuously learning and building. Check back soon.</p>
+          <p><strong>My role:</strong> Independent learner and developer.</p>
           <div class="project-footer">
-            <a href="contact.html" class="project-link">Have a project idea? Let's talk →</a>
+            <span class="project-status">Ongoing learning project</span>
           </div>
-        </div>
+        </article>
 
       </div>
     </div>
@@ -86,6 +96,8 @@
   <div class="page-nav-hint container">
     <a href="contact.html" class="btn-secondary">Next: Contact →</a>
   </div>
+
+  </main>
 
   <footer class="footer">
     <p>Designed &amp; built by <strong>Mark Kipkoech</strong> — Nakuru, Kenya &copy; 2026</p>

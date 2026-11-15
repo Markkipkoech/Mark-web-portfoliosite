@@ -5,17 +5,27 @@ const menuToggle = document.getElementById('mobile-menu');
 const navList = document.getElementById('nav-list');
 
 if (menuToggle && navList) {
+  const setMenuOpen = isOpen => {
+    menuToggle.classList.toggle('is-active', isOpen);
+    navList.classList.toggle('active', isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  };
+
   menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('is-active');
-    navList.classList.toggle('active');
+    setMenuOpen(!navList.classList.contains('active'));
   });
 
-  // Close nav when a link is clicked (mobile UX)
   navList.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      menuToggle.classList.remove('is-active');
-      navList.classList.remove('active');
+      setMenuOpen(false);
     });
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && navList.classList.contains('active')) {
+      setMenuOpen(false);
+      menuToggle.focus();
+    }
   });
 }
 
@@ -23,63 +33,15 @@ if (menuToggle && navList) {
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
 document.querySelectorAll('.nav-links a').forEach(link => {
-  const href = link.getAttribute('href');
-  if (href === currentPage) {
-    link.classList.add('active');
+  const isCurrentPage = link.getAttribute('href') === currentPage;
+  link.classList.toggle('active', isCurrentPage);
+
+  if (isCurrentPage) {
+    link.setAttribute('aria-current', 'page');
+  } else {
+    link.removeAttribute('aria-current');
   }
 });
-
-// ── Skill bar entrance animation ───────────────────────────
-const skillBars = document.querySelectorAll('.skill-progress');
-
-if (skillBars.length > 0) {
-  const animateBars = (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const bar = entry.target;
-        const targetWidth = bar.style.width;
-        bar.style.width = '0';
-        requestAnimationFrame(() => {
-          setTimeout(() => { bar.style.width = targetWidth; }, 80);
-        });
-        observer.unobserve(bar);
-      }
-    });
-  };
-
-  const barObserver = new IntersectionObserver(animateBars, { threshold: 0.3 });
-
-  skillBars.forEach(bar => {
-    bar.dataset.target = bar.style.width;
-    bar.style.width = '0';
-    barObserver.observe(bar);
-  });
-}
-
-// ── Contact form ────────────────────────────────────────────
-const contactForm = document.getElementById('contact-form');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = contactForm.querySelector('.submit-button');
-    const name    = contactForm.querySelector('#name').value.trim();
-    const email   = contactForm.querySelector('#email').value.trim();
-    const subject = contactForm.querySelector('#subject').value.trim();
-    const message = contactForm.querySelector('#message').value.trim();
-
-    const mailtoLink = `mailto:Kipkoechmark41@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-
-    btn.textContent = 'Opening mail client...';
-    btn.disabled = true;
-    window.location.href = mailtoLink;
-
-    setTimeout(() => {
-      btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
-      btn.disabled = false;
-    }, 2500);
-  });
-}
 
 // ── Navbar border on scroll ─────────────────────────────────
 const navbar = document.querySelector('.navbar');

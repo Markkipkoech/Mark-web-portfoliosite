@@ -3,38 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mark Kipkoech — Web Developer based in Nakuru, Kenya. Building clean, fast, and functional web experiences." />
-  <title>Mark Kipkoech | Web Developer</title>
+  <meta name="description" content="Mark Kipkoech — Software Developer with a Backend Engineering Focus, developing practical skills through hands-on software projects and structured learning." />
+  <title>Mark Kipkoech | Software Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
 </head>
 <body class="home-page">
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <a href="index.html" class="logo">mk<span>.</span></a>
-    <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
+    <button type="button" class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" aria-controls="nav-list" aria-expanded="false">
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+    </button>
     <ul class="nav-links" id="nav-list">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="services.html">Services</a></li>
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
+      <li><a href="engineering.html">Engineering</a></li>
+      <li><a href="learning-journal.html">Learning Journal</a></li>
       <li><a href="contact.html" class="btn-contact">Contact</a></li>
     </ul>
   </nav>
 
+  <main>
   <!-- Hero -->
   <section class="hero" id="home">
     <div class="hero-layout">
 
       <div class="hero-inner">
-        <span class="hero-tag">Available for freelance work</span>
+        <span class="hero-tag">Software Developer with a Backend Engineering Focus</span>
         <h1>Hi, I'm <em>Mark Kipkoech</em></h1>
-        <p>I build clean, responsive websites and backend systems — turning ideas into things that actually work on the internet.</p>
+        <p>I am developing practical backend engineering skills through hands-on software projects and structured learning.</p>
         <div class="hero-actions">
           <a href="projects.html" class="btn-primary">See My Work</a>
           <a href="contact.html" class="btn-secondary">Let's Talk</a>
@@ -43,7 +44,7 @@
 
       <div class="hero-photo-wrap">
         <div class="hero-photo-frame">
-          <img src="profile.jpg" alt="Mark Kipkoech — Web Developer" class="hero-photo" />
+          <img src="profile.jpg" alt="Mark Kipkoech" class="hero-photo" />
         </div>
         <div class="photo-accent-dot"></div>
         <div class="photo-accent-ring"></div>
@@ -64,13 +65,7 @@
       <div class="about-content">
         <div class="about-text">
           <p>
-            I'm a self-driven web developer based in Nakuru, Kenya. I got into coding out of genuine curiosity — I wanted to understand how websites worked, and one thing led to another.
-          </p>
-          <p>
-            On the frontend I work with HTML, CSS, and JavaScript to build interfaces that feel natural and load fast. On the backend I use Python — mostly Flask — to build APIs, handle databases, and wire everything together.
-          </p>
-          <p>
-            I've built a full-stack e-commerce project (Bora Poultry) which includes M-Pesa payment integration, user authentication, and an admin dashboard. It's one of the things I'm most proud of so far.
+            I'm a software developer based in Nakuru, Kenya. I got into coding out of genuine curiosity — I wanted to understand how websites worked, and one thing led to another.
           </p>
           <p>
             When I'm not building something, I'm usually reading about tech, exploring open-source repos, or experimenting with something new.
@@ -78,25 +73,19 @@
         </div>
         <div class="about-stats">
           <div class="stat">
-            <span class="stat-num">2+</span>
-            <span class="stat-label">Years Learning</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">5+</span>
-            <span class="stat-label">Projects Built</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">Full</span>
-            <span class="stat-label">Stack Capable</span>
+            <span class="stat-num">Backend Engineering</span>
+            <span class="stat-label">Current Focus</span>
           </div>
         </div>
       </div>
 
       <div class="about-cta">
-        <a href="skills.html" class="btn-secondary">View My Skills →</a>
+        <a href="engineering.html" class="btn-secondary">Explore Engineering</a>
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer class="footer">
     <p>Designed &amp; built by <strong>Mark Kipkoech</strong> — Nakuru, Kenya &copy; 2026</p>

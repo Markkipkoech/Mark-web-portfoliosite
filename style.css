@@ -146,6 +146,12 @@ body.home-page {
 
 .nav-links a.active::after { width: 100%; }
 
+.navbar a:focus-visible,
+.menu-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 .btn-contact {
   background: var(--accent) !important;
   color: #0e0e0e !important;
@@ -157,15 +163,23 @@ body.home-page {
 
 .btn-contact::after { display: none !important; }
 .btn-contact:hover { opacity: 0.85; color: #0e0e0e !important; }
-.btn-contact.active-contact { opacity: 0.85; }
+.btn-contact.active { opacity: 0.85; }
 
 .menu-toggle {
   display: none;
   flex-direction: column;
   gap: 5px;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   padding: 4px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
 }
+
+.menu-toggle.is-active .bar { background: var(--accent); }
 
 .bar {
   display: block;
@@ -1026,4 +1040,50 @@ body.home-page {
   .skills-grid,
   .services-grid,
   .projects-grid { grid-template-columns: 1fr; }
+}
+
+.contact-form-area {
+  min-width: 0;
+}
+
+/* Formspree contact form feedback */
+[data-fs-success],
+[data-fs-error] {
+  display: none;
+}
+
+[data-fs-success][data-fs-active] {
+  display: block;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(200, 240, 106, 0.3);
+  border-radius: 8px;
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+[data-fs-error][data-fs-active] {
+  display: block;
+  color: #ff9292;
+  font-size: 0.88rem;
+}
+
+[data-fs-error]:not([data-fs-error=''])[data-fs-active] {
+  margin-top: 0.25rem;
+}
+
+[data-fs-error=''][data-fs-active] {
+  padding: 1rem;
+  border: 1px solid rgba(255, 146, 146, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 80, 80, 0.08);
+}
+
+[data-fs-field][aria-invalid='true'] {
+  border-color: #ff9292;
+}
+
+.submit-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
 }
