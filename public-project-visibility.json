@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "project_id": "companyhub",
+      "repository_visibility": "private"
+    },
+    {
+      "project_id": "backend-engineering-learning-journey",
+      "repository_visibility": "public",
+      "public_repository_url": "https://github.com/Markkipkoech/backend-engineering-learning-journey"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A sanitized summary of a CompanyHub sales-integrity milestone, based on local repository history." />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="CompanyHub — Database-level safeguards for sales integrity" />
+  <meta property="og:description" content="A sanitized summary of a CompanyHub sales-integrity milestone, based on local repository history." />
+  <meta property="og:url" content="https://markkipkoech.github.io/Mark-web-portfoliosite/companyhub-sales-integrity.html" />
+  <link rel="canonical" href="https://markkipkoech.github.io/Mark-web-portfoliosite/companyhub-sales-integrity.html" />
+  <title>CompanyHub — Database-level safeguards for sales integrity</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Manrope:wght@400;600;700;800&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="logo">mk<span>.</span></a>
+    <button type="button" class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" aria-controls="nav-list" aria-expanded="false">
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+    </button>
+    <ul class="nav-links" id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="engineering.html">Engineering</a></li>
+      <li><a href="learning-journal.html">Learning Journal</a></li>
+      <li><a href="contact.html" class="btn-contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <div class="section-label">CompanyHub milestone</div>
+        <h1>CompanyHub — Database-level safeguards for sales integrity</h1>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <section aria-labelledby="project-context">
+          <h2 id="project-context">Project context</h2>
+          <p>CompanyHub is an in-development business management platform. This page does not present it as publicly available or deployed in production.</p>
+        </section>
+
+        <section aria-labelledby="milestone">
+          <h2 id="milestone">Milestone</h2>
+          <p>The relevant local repository history records work on database-level safeguards for sales integrity.</p>
+        </section>
+
+        <section aria-labelledby="milestone-coverage">
+          <h2 id="milestone-coverage">What the milestone covers</h2>
+          <ul>
+            <li><strong>Same-business sale-line relationships:</strong> keeps sale lines associated with records from the same business.</li>
+            <li><strong>Sale completion data and totals:</strong> checks that completion data and totals are valid.</li>
+            <li><strong>Lifecycle transitions:</strong> applies safeguards to changes in a sale's lifecycle.</li>
+            <li><strong>Completed records:</strong> protects completed sale records from changes that would alter their history.</li>
+          </ul>
+          <p>The local repository history includes integrity test files for both SQLite and PostgreSQL. No test execution results are claimed on this page.</p>
+        </section>
+
+        <section aria-labelledby="date-and-evidence">
+          <h2 id="date-and-evidence">Date and evidence limitation</h2>
+          <p>The relevant local repository commit is dated 10 November 2026. This is a commit date, not an independently verified completion date.</p>
+          <!-- repository-visibility:companyhub -->
+          <p>This page is a sanitized portfolio summary based on local repository history. It does not independently verify or reproduce the implementation.</p>
+        </section>
+      </div>
+    </section>
+
+    <div class="page-nav-hint container">
+      <a href="projects.html" class="btn-secondary">← Back to Projects</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; built by <strong>Mark Kipkoech</strong> — Nakuru, Kenya &copy; 2026</p>
+    <p class="footer-sub">Open to freelance and collaboration opportunities.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "projects": {
+    "companyhub": {
+      "repository": "Markkipkoech/CompanyHub",
+      "display_name": "CompanyHub",
+      "enabled": true,
+      "destinations": [
+        "projects",
+        "engineering"
+      ]
+    },
+    "backend-engineering-learning-journey": {
+      "repository": "Markkipkoech/backend-engineering-learning-journey",
+      "display_name": "Backend Engineering Learning Journey",
+      "enabled": true,
+      "destinations": [
+        "projects",
+        "learning-journal"
+      ]
+    }
+  }
+}
